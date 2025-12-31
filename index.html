@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MBD — Новогоднее поздравление 2026</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="terminal">
+
+        <div class="terminal-header">
+
+            <div class="terminal-title">system://prompt></div>
+
+            <div class="terminal-subtitle">Введите кодовое имя организации для доступа:</div>
+
+        </div>
+
+        <div class="terminal-input-line">
+
+            <input type="text" id="accessInput" placeholder="_" maxlength="3">
+
+            <span id="inputStatus"></span>
+
+            <button id="activateBtn" disabled>АКТИВИРОВАТЬ</button>
+
+        </div>
+
+        <div id="terminalMessage" class="hidden">
+          
+            <div class="message-line">Сообщение получено. Отправитель: Trice. Статус: Зашифровано
+          </div>
+
+            <button id="decryptBtn">РАСШИФРОВАТЬ</button>
+
+        </div>
+
+    </div>
+
+    <div id="mainContent" class="hidden">
+
+        <section id="messageSection">
+
+            <h2>// ШИФРОГРАММА ОТ TRICE</h2>
+
+            <div id="typedMessage"></div>
+
+        </section>
+
+        <section id="countdownSection">
+
+            <h2>ОБРАТНЫЙ ОТСЧЕТ ДО НОВОЙ ЭРЫ 2026</h2>
+
+            <div class="clock-container">
+
+                <div class="clock-face">
+
+                    <div class="clock-center"></div>
+
+                    <div class="hour-hand"></div>
+
+                    <div class="minute-hand"></div>
+
+                    <div class="second-hand"></div>
+
+                    <div class="digital-time">
+
+                        <div class="time-display">
+
+                            <span id="clock-days">00</span>
+
+                            <span class="time-separator">:</span>
+
+                            <span id="clock-hours">00</span>
+
+                            <span class="time-separator">:</span>
+
+                            <span id="clock-minutes">00</span>
+
+                            <span class="time-separator">:</span>
+
+                            <span id="clock-seconds">00</span>
+
+                        </div>
+
+                        <div class="time-labels">
+
+                            <span>ДНИ</span>
+
+                            <span>ЧАСЫ</span>
+
+                            <span>МИН</span>
+
+                            <span>СЕК</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="timezone">MSK (UTC+3)</div>
+
+        </section>
+
+        <section id="summarySection">
+
+            <h2>ИТОГИ ГОДА // 2025</h2>
+
+            <div class="counter-panels">
+
+                <div class="counter-panel">
+
+                    <div class="counter-icon"><i class="fas fa-users"></i></div>
+
+                    <div class="counter-title">ПОДПИСЧИКОВ</div>
+
+                    <div class="counter-number" data-target="700">0</div>
+
+                    <div class="counter-plus">+</div>
+
+                </div>
+
+                <div class="counter-panel">
+
+                    <div class="counter-icon"><i class="fas fa-newspaper"></i></div>
+
+                    <div class="counter-title">ПОСТОВ</div>
+
+                    <div class="counter-number" data-target="70">0</div>
+
+                    <div class="counter-plus">+</div>
+
+                </div>
+
+                <div class="counter-panel">
+
+                    <div class="counter-icon"><i class="fas fa-lightbulb"></i></div>
+
+                    <div class="counter-title">РЕАЛИЗОВАННЫХ ИДЕЙ</div>
+
+                    <div class="counter-number" data-target="30">0</div>
+
+                    <div class="counter-plus">+</div>
+
+                </div>
+
+                <div class="counter-panel">
+
+                    <div class="counter-icon"><i class="fas fa-gift"></i></div>
+
+                    <div class="counter-title">БЕСПЛАТНЫЙ КОНТЕНТ</div>
+
+                    <div class="counter-number" data-target="100">0</div>
+
+                    <div class="counter-percent">%</div>
+
+                </div>
+
+                <div class="counter-panel">
+
+                    <div class="counter-icon"><i class="fas fa-handshake-slash"></i></div>
+
+                    <div class="counter-title">СОТРУДНИЧЕСТВ</div>
+
+                    <div class="counter-number" data-target="0">0</div>
+
+                    <div class="counter-text">НИ ОДНОГО</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="inviteSection">
+
+            <a id="inviteBtn" href="https://t.me/+qbTDCpVmdBs5NzQy" target="_blank">
+
+                ПРИНЯТЬ ПРИГЛАШЕНИЕ
+
+            </a>
+
+        </section>
+
+        <section id="prizeSection">
+
+            <h2>УГАДАЙ, ГДЕ ПРИЗ</h2>
+
+            <div class="gifts-container">
+
+                <div class="gift" data-id="1"><i class="fas fa-gift"></i></div>
+
+                <div class="gift" data-id="2"><i class="fas fa-gift"></i></div>
+
+                <div class="gift" data-id="3"><i class="fas fa-gift"></i></div>
+
+            </div>
+
+            <div id="prizeDisplay" class="hidden">
+
+                <div class="cocaine-flash"></div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div id="snowfall" class="hidden"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</body>
+
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
